@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article</title>
+</head>
+<body>
+<h1>Total number of words are {{count}}.</h1>
+<a href="{% url 'name' %}"> click here for name</a>
+<br></br>
+{{article}}
+<br></br>
+<br></br>
+<h1>Total count</h1>
+<br></br>
+{% for word , num in article_dic %}
+<h1>{{word}} : {{num}}</h1>
+{% endfor %}
+</body>
+</html>
+
+

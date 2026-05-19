@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fruit_name</title>
+</head>
+<body>
+<h1>Only banana is available now</h1>
+<form action="{% url 'prize' %}">
+    {% csrf_token %}
+    <input type="text" name="buyer_name">
+    <br></br>
+    <input type="text" name="buyer_range">
+    <br></br>
+    <input type="submit" value="Submit">
+    <br></br>
+    <br></br>
+</form>
+<a href="{% url 'prize' %}"> Click here for prize</a>
+</body>
+</html>
