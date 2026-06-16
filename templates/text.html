@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text</title>
+</head>
+<body>
+<a href="{% url 'count' %}">Click here for count</a>
+<h1>Enter your text</h1>
+<form action="{% url 'count' %}">
+  {% csrf_token %}
+  <textarea cols="20" rows="10" name="text"> </textarea>
+  <br></br>
+  <input type="submit" value="Submit"> </input>
+</form>
+</body>
+</html>

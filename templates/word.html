@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>word</title>
+</head>
+<body>
+<h1>Enter word to check palindrome or not:</h1>
+<form action="{% url 'pali_checker' %}">
+  {% csrf_token %}
+  <input type="text" name="word">
+  <br></br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>

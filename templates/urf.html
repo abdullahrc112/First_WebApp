@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>urf</title>
+</head>
+<body>
+<h1> Alfaaz ki tadaad hai {{num_lfz}}. </h1>
+<a href="{% url 'naam' %}"> Click here for naam</a>
+<br></br>
+{{para}}
+<br></br>
+<br></br>
+<h1> Total count: </h1>
+{% for lafz, tadaad in sorted_para %}
+<h1>{{lafz}} : {{tadaad}}</h1>
+{% endfor %}
+</body>
+</html>

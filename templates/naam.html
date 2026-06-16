@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>naam</title>
+</head>
+<body>
+<h1>mera naam fatima hai</h1>
+<a href="{% url 'urf' %}"> Click here for urf </a>
+<br></br>
+<form action="{% url 'urf' %}">
+    {% csrf_token %}
+    <textarea rows="10" cols="20" name="para" > </textarea>
+    <br></br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
